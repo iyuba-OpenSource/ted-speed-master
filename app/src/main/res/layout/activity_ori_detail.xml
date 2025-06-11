@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ori_line_detail"
+    android:background="@color/white"
+    tools:context="com.sdiyuba.tedenglish.activity.OriDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/top_line"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/fanhuiblack"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+        <ImageView
+            android:layout_weight="8"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <ImageView
+
+
+            android:id="@+id/isVideo_show"
+            android:layout_weight="1"
+            android:src="@drawable/orivideo_true"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+
+        <ImageView
+
+            android:id="@+id/pdf_top"
+            android:layout_weight="1"
+            android:src="@drawable/pdf"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/sound_top"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/erji_top1">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/mkf_top"
+            android:layout_weight="1"
+            android:src="@drawable/luyin_top"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/shoucang_top"
+            android:layout_weight="1"
+            android:src="@drawable/shoucang_top0"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/textsize_top"
+
+            android:layout_weight="1"
+            android:src="@drawable/textsizetop"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <ImageView
+
+            android:id="@+id/share_top"
+
+            android:layout_weight="1"
+            android:src="@drawable/tedshare"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"></TextView>
+
+                <TextView
+                    android:id="@+id/ori_title_EN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:lineSpacingExtra="2sp"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_weight="1.3"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            android:id="@+id/ori_time"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            ></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/wordcount"
+                            android:layout_width="26dp"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+
+                        <TextView
+
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+
+                            android:id="@+id/ori_readcount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            ></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="2.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            android:background="@drawable/btn_view_shape_white"
+                            android:id="@+id/page_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            ></TextView>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"></TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <com.google.android.exoplayer2.ui.StyledPlayerView
+
+                    android:id="@+id/exo_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:controller_layout_id="@layout/my_exoplayer_control"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:show_buffering="when_playing"
+                    app:show_shuffle_button="true"
+                    tools:ignore="MissingClass" />
+                <com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout
+                    android:id="@+id/scroller_fl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+
+                        android:visibility="gone"
+                        android:id="@+id/isImage"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"></TextView>
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            >
+
+                            <ImageView
+
+                                android:id="@+id/ori_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="220dp"
+                                >
+
+                            </ImageView>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"></TextView>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/Original_rv"
+
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        >
+                        <TextView
+                            android:id="@+id/submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="17dp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginEnd="80dp"
+                            android:background="@drawable/button_background"
+                            android:text="完成阅读"></TextView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp">
+
+                    </TextView>
+
+                </com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:id="@+id/sound_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/originals_tv_play_time"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="00:00"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+
+                    <SeekBar
+                        android:id="@+id/originals_sb"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:progressTint="?colorPrimary"
+                        android:thumbTint="?colorPrimary"
+                        tools:ignore="DuplicateIds" />
+
+
+                    <TextView
+                        android:id="@+id/originals_tv_duration"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:text="00:00"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/qn_cn_change"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/zhongyingwen">
+
+
+                    </ImageView>
+
+                    <ImageView
+
+                        android:id="@+id/up_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/up">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/page_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/bofang1">
+
+                    </ImageView>
+
+
+                    <ImageView
+                        android:id="@+id/down_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/next">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:id="@+id/speed_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_view_shape_white"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="0.8x"
+                        android:textSize="10sp"></TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--广告-->
+            <FrameLayout
+                android:id="@+id/co_fl_ad"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="gone">
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30">
+
+            <FrameLayout
+                android:id="@+id/huadong"
+                android:layout_marginTop="130dp"
+                android:layout_gravity="start"
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+                <com.sdiyuba.tedenglish.util.CountDownProgressBar
+                    android:id="@+id/cpb_countdown"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="15dp"
+
+                    app:countDown_centerTextColor="@color/CountDownBarColor"
+                    app:countDown_centerTextSize="14dp"
+                    app:countDown_circleWidth="3dp"
+                    app:countDown_firstColor="@color/Huibackground"
+                    app:countDown_isShowGradient="true"
+                    app:countDown_secondColor="@color/CountDownBarColor"
+
+                    tools:ignore="MissingClass" />
+
+                <!--        <ImageView-->
+                <!--            android:background="@color/white"-->
+                <!--            android:padding="3dp"-->
+                <!--            android:layout_marginTop="10dp"-->
+                <!--            android:layout_marginStart="10dp"-->
+                <!--            android:layout_marginBottom="180dp"-->
+                <!--            android:layout_gravity="center_vertical|start"-->
+                <!--            android:layout_width="45dp"-->
+                <!--            android:layout_height="30dp">-->
+
+                <!--        </ImageView>-->
+
+                <ImageView
+
+                    android:id="@+id/redbag"
+                    android:layout_width="45dp"
+
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="17dp"
+
+                    android:src="@drawable/clickbag">
+
+                </ImageView>
+
+            </FrameLayout>
+
+
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

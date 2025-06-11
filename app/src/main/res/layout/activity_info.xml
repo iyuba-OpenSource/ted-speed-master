@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:padding="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+
+            android:id="@+id/backs"
+            android:padding="6dp"
+            android:layout_weight="1"
+            android:src="@drawable/fanhuiblack"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <TextView
+
+            android:gravity="center"
+            android:text="关于"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+        <ImageView
+
+            android:visibility="invisible"
+            android:id="@+id/del_word"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/shanchu"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/info_AppImage"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher">
+
+                </ImageView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/app_name"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:text="version"
+                android:textColor="@color/sec_verify_text_color_common_red"
+                >
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/jianjie"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="简介: 学英语，交朋友。标准英音，单句跟读，听说结合，是您提高英语听说能力的好帮手。山东爱语吧信息科技有限公司为您提供精品外语学习应用。"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/gsname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:text="爱语吧 ( 日照 ) 信息科技有限公司版权所有"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/beian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/lianjiese"
+                android:text="鲁ICP备2022029024号-3A"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Tel : 400 888 1905"
+                >
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

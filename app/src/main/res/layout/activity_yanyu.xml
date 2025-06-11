@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+
+            android:id="@+id/backs"
+            android:padding="6dp"
+            android:layout_weight="1"
+            android:src="@drawable/fanhuiblack"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <TextView
+
+            android:gravity="center"
+            android:text="经典谚语"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+        <ImageView
+
+            android:visibility="invisible"
+            android:id="@+id/del_word"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/shanchu"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@drawable/iyum_say_main_bg"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="400dp">
+        <TextView
+            android:id="@+id/Learning_report_text"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+
+            ></TextView>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/nextone"
+        android:gravity="center"
+        android:text="换一个"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></TextView>
+
+
+</LinearLayout>

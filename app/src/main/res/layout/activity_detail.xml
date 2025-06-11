@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Detail_line"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/fanhui"
+        android:layout_height="50dp"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="110dp"
+        android:background="@color/maincolor">
+        <TextView
+            android:id="@+id/detail_title"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="文章详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/more"-->
+<!--            android:layout_width="26dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/more"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:layout_marginBottom="12dp"-->
+<!--            android:layout_marginEnd="18dp"-->
+<!--            android:layout_gravity="right">-->
+
+<!--        </ImageView>-->
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_title"
+        app:tabIndicatorColor="@color/maincolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    app:cardBackgroundColor="#F4F4F4">
+
+    <LinearLayout
+        android:padding="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+
+            android:id="@+id/tb"
+            android:padding="6dp"
+            android:layout_weight="1"
+            android:src="@drawable/fanhuiblack"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <TextView
+
+            android:gravity="center"
+            android:text="钱包记录"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+        <ImageView
+
+            android:visibility="invisible"
+            android:id="@+id/del_word"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/shanchu"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="钱包余额">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="laiyuan"
+                    android:textColor="@color/sec_verify_text_color_common_red"
+                    android:textSize="17sp"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+
+                    android:textColor="@color/sec_verify_text_color_common_red"
+                    android:textSize="8sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="（满1元可以抵扣会员购买，付费全站会员可以提现）">
+
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:gravity="center"
+
+                android:textColor="@color/maincolor"
+                android:textSize="8sp"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:text="余额明细"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/money_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/loading_loadend"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F0EFEC"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible">
+
+
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="style/Widget.ProgressBar.Small.Inverse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="10dp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="加载中"
+            android:textSize="16sp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/loading"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="加载中"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:gravity="center"-->
+        <!--            android:textColor="@colorack"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:visibility="visible">-->
+        <!--        </TextView>-->
+
+
+    </LinearLayout>
+
+
+
+
+</com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout>

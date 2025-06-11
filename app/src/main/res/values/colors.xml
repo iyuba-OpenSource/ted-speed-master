@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="purple_200">@color/maincolor</color>
+    <color name="purple_500">@color/maincolor</color>
+    <color name="purple_700">@color/maincolor</color>
+    <color name="teal_200">@color/maincolor</color>
+    <color name="teal_700">@color/maincolor</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="maincolor">#72A638</color>
+    <color name="hintColor">#DEE7E7EA</color>
+    <color name="lianjiese">#3535F6</color>
+    <color name="gray">#D8D8D8</color>
+    <color name="Huibackground">#ECEAEA</color>
+    <color name="Hui_button_background">#F6F6F6</color>
+    <color name="vipTopColor">#DEF4F4F4</color>
+    <color name="hinttext">#656161</color>
+    <color name="red">#E80C0C</color>
+    <color name="hintbackground">#8A8585</color>
+    <color name="homehintbackground">#F4F3F3</color>
+    <color name="vipbackground">#FE5442</color>
+    <color name="colorPrimary">@color/maincolor</color>
+    <color name="colorAccent">@color/maincolor</color>
+    <color name="colorPrimaryDark">@color/maincolor</color>
+
+
+
+
+    <color name="CountDownBarColor">#F3E4BC45</color>
+    <color name="hintblack">#100F0F</color>
+    <color name="CountDownssBarColor">@color/maincolor</color>
+
+    <color name="bytimechoicetext">#fb8029</color>
+    <color name="middlenearright">#f76d0f</color>
+
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context="com.sdiyuba.tedenglish.com.ai.voa.fragment.heardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginStart="15dp"
+            android:id="@+id/heard_history_text"
+
+            android:layout_gravity="center"
+          android:gravity="bottom"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:text="听过" />
+        <TextView
+            android:layout_marginStart="25dp"
+            android:id="@+id/collect_text"
+            android:layout_gravity="center"
+            android:gravity="bottom"
+            android:textColor="@color/hinttext"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="收藏" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:id="@+id/heard_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </FrameLayout>
+
+
+</LinearLayout>

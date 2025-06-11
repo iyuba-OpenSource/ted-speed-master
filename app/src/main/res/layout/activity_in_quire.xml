@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:id="@+id/inquire_line"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:id="@+id/tb_back"
+        android:text="返回"
+        android:layout_gravity="left"
+        android:gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+
+        <com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout
+            android:id="@+id/scroller_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/search_ll_word"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/search_tv_word"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ph_sound"
+                        android:visibility="gone"
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ying_sound"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="10dp"
+
+                            />
+                        <TextView
+                            android:id="@+id/ying_text"
+                            android:text="英 :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@android:color/black" />
+
+                        <ImageView
+
+                            android:id="@+id/mei_sound"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="10dp"
+
+                            />
+                        <TextView
+                            android:id="@+id/mei_text"
+                            android:text="美 :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/search_tv_def"
+
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/page_line"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="                "
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/maincolor"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/page_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  - 精彩文章 - "
+                        android:layout_weight="2"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/maincolor"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/more_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  - 更多      "
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/maincolor"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/InQuireRv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/sentence_line"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="                "
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/maincolor"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/sentence_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  - 相关句子 - "
+                        android:layout_weight="2"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/maincolor"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/more_sentence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  - 更多      "
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/maincolor"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/sentenceRv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+        </com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <!--单词-->
+
+
+</LinearLayout>

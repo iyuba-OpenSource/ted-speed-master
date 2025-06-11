@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/toolbarfirst"
+        layout="@layout/toobar_biaoti">
+    </include>
+
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:background="@color/hintColor"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/shouye0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shouye0"></ImageView>
+
+            <TextView
+                android:id="@+id/text_jiahua"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="11dp"
+                android:text="首 页"
+                android:textColor="#DEA1A1A1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/heard_line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></TextView>
+
+            <ImageView
+                android:id="@+id/heard_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/heard0"></ImageView>
+
+            <TextView
+                android:id="@+id/heard_text"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:text="听过"
+
+                android:textColor="#DEA1A1A1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wk_line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></TextView>
+
+            <ImageView
+                android:id="@+id/wk_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/wk0"></ImageView>
+
+            <TextView
+                android:id="@+id/wk_text"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:text="微课"
+
+                android:textColor="#DEA1A1A1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/make_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></TextView>
+
+            <ImageView
+                android:id="@+id/make_money_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/huodong0"></ImageView>
+
+            <TextView
+                android:id="@+id/make_money_text"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:text="活动"
+
+                android:textColor="#DEA1A1A1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wode0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></TextView>
+
+            <ImageView
+                android:id="@+id/wode"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/wode0"></ImageView>
+
+            <TextView
+                android:id="@+id/text_wode"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="11dp"
+                android:gravity="center"
+                android:text="我"
+
+                android:textColor="#DEA1A1A1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

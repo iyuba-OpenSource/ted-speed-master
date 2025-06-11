@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/liubai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/more_background"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/word_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单词释义"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"></TextView>
+
+            <ImageView
+
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/word_audio"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/megaphone"></ImageView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/word_pron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/hinttext"></TextView>
+
+        <TextView
+            android:id="@+id/word_meaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/black"></TextView>
+            <TextView
+                android:background="@drawable/button_background"
+                android:id="@+id/word_book"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:textColor="@color/white"
+                android:layout_marginStart="115dp"
+                android:layout_marginEnd="115dp"
+
+                android:textStyle="bold"
+                android:text="+ 加入生词本"
+                android:gravity="center">
+
+            </TextView>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/black"></TextView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

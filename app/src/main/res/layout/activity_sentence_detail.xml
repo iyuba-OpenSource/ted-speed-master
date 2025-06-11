@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/sentence_detail_line"
+    android:scrollbars="vertical">
+    <TextView
+        android:id="@+id/tb_back"
+        android:text="返回"
+        android:layout_gravity="left"
+        android:gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/sentence_detail_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <!--单词-->
+
+
+</LinearLayout>
